@@ -2,4 +2,6 @@ Plot cdf and pdf: $python <plot_script>.py err_8 err_rand
 The suffix 8 stands for last-8-bit approximation and rand stands for random error injection.
 Plot math error: $python <plot_script>.py <error_file>
 
-By default, all the cdf/pdf scripts generate png files. Uncomment the lines to enable pdf output. 
+By default, all the cdf/pdf scripts generate png files. Uncomment the lines to enable pdf output.
+
+Re-execution is included. 
