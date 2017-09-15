@@ -1,0 +1,6 @@
+I am assuming Microsoft Excel is available in your system.
+
+bound.xlsx -> The latest results can be found in sheet "new"
+dram_power.xlsx -> Sheet1 is the basic DRAM power from Micron's calculator
+                   Sheet2 is the results of the MICRO submission which does not consider reshuffle units
+                   Sheet "new_power(latest)" is the results used in the ASPLOS submission
