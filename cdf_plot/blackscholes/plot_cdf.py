@@ -76,7 +76,7 @@ plt.plot(base_rand[:-1], cumulative_rand, '-',  color='r', label="Random", marke
 plt.plot(base_8[:-1], cumulative_8, '-', color = 'b', label=xname, markersize=3, lw=4)
 plt.plot([avg_rand, avg_rand], [min_y, 1], '-.', color='darkred', lw=3, label="Random Avg")
 plt.plot([np.percentile(y_rand, 99), np.percentile(y_rand, 99)], [min_y, 1] , '-.', color='orange', lw=3, label="Random 99th")
-plt.plot([63.8, 63.8], [min_y, 1], 'k--', lw=3, label="Worst-case Bound")
+plt.plot([63.8*2, 63.8*2], [min_y, 1], 'k--', lw=3, label="Worst-case Bound")
 plt.plot([eight_rand, eight_rand], [min_y, 1], '--', color='limegreen', lw=3, label=xname + " Avg")
 plt.title('Black-Scholes', fontsize=20)
 plt.xscale('log')

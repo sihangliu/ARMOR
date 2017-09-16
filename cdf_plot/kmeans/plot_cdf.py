@@ -77,7 +77,7 @@ plt.plot(base_8[:-1], cumulative_8, '-', color = 'b', label=xname, markersize=3,
 plt.plot([avg_rand, avg_rand], [min_y, 1], '-.', color='darkred', lw=3, label="Random Avg")
 plt.plot([np.percentile(y_rand, 99), np.percentile(y_rand, 99)], [min_y, 1] , '-.', color='orange', lw=3, label="Random 99th")
 #including error from subtraction
-plt.plot([1.95e-3, 1.95e-3], [min_y, 1], 'k--', lw=3, label="Worst-case Bound")
+plt.plot([1.95e-3*2, 1.95e-3*2], [min_y, 1], 'k--', lw=3, label="Worst-case Bound")
 plt.plot([eight_rand, eight_rand], [min_y, 1], '--', color='limegreen', lw=3, label=xname + " Avg")
 plt.title('K-means', fontsize=20)
 plt.xscale('log')
