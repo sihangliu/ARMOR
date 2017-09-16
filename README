@@ -5,3 +5,5 @@ Plot math error: $python <plot_script>.py <error_file>
 By default, all the cdf/pdf scripts generate png files. Uncomment the lines to enable pdf output.
 
 Re-execution is included. 
+
+plot_energy -> Figure 15 in the paper
