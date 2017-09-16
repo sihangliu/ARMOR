@@ -4,3 +4,8 @@ bound.xlsx -> The latest results can be found in sheet "new"
 dram_power.xlsx -> Sheet1 is the basic DRAM power from Micron's calculator
                    Sheet2 is the results of the MICRO submission which does not consider reshuffle units
                    Sheet "new_power(latest)" is the results used in the ASPLOS submission
+dram_plot.xlsx -> Sheet "cache_size": Figure 12 - variable reshuffle cache sizes
+	         Sheet "perf": Figure 2 - low vs. standard refresh rate (performance and energy)
+             Sheet "time": Figure 13 - speedup of low-refresh DRAM over standard DRAM (including re-execution overhead) 
+			 Sheet "ecp": Figure 14 - For cases that require re-execution, compare the runtime between ARMOR and ECP (1, 2, 4 cores)
+qos.xlsx -> Summary of QoS (no re-execution). ARMOR vs. Random error.
