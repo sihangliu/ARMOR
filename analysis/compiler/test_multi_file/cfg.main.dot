@@ -1,0 +1,5 @@
+digraph "CFG for 'main' function" {
+	label="CFG for 'main' function";
+
+	Node0x1595ff0 [shape=record,label="{entry:\l  %a = alloca float, align 4\l  store float 0.000000e+00, float* %a, align 4\l  %0 = load float* %a, align 4\l  %call = call float @_Z3foof(float %0)\l  store float %call, float* %a, align 4\l  ret i32 0\l}"];
+}

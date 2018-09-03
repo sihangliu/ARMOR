@@ -1,0 +1,5 @@
+digraph "CFG for '_Z9fftSinCosfPfS_' function" {
+	label="CFG for '_Z9fftSinCosfPfS_' function";
+
+	Node0x19df850 [shape=record,label="{entry:\l  %x.addr = alloca float, align 4\l  %s.addr = alloca float*, align 8\l  %c.addr = alloca float*, align 8\l  store float %x, float* %x.addr, align 4\l  store float* %s, float** %s.addr, align 8\l  store float* %c, float** %c.addr, align 8\l  %0 = load float* %x.addr, align 4\l  %conv = fpext float %0 to double\l  %mul = fmul double 0xC01921FB54442D18, %conv\l  %call = call double @sin(double %mul) #3\l  %conv1 = fptrunc double %call to float\l  %1 = load float** %s.addr, align 8\l  store float %conv1, float* %1, align 4\l  %2 = load float* %x.addr, align 4\l  %conv2 = fpext float %2 to double\l  %mul3 = fmul double 0xC01921FB54442D18, %conv2\l  %call4 = call double @cos(double %mul3) #3\l  %conv5 = fptrunc double %call4 to float\l  %3 = load float** %c.addr, align 8\l  store float %conv5, float* %3, align 4\l  ret void\l}"];
+}

@@ -1,0 +1,5 @@
+digraph "CFG for '_Z3foof' function" {
+	label="CFG for '_Z3foof' function";
+
+	Node0x158bc30 [shape=record,label="{entry:\l  %a.addr = alloca float, align 4\l  store float %a, float* %a.addr, align 4\l  %0 = load float* %a.addr, align 4\l  %1 = load float* %a.addr, align 4\l  %mul = fmul float %0, %1\l  ret float %mul\l}"];
+}

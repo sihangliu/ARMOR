@@ -1,0 +1,5 @@
+digraph "CFG for '_Z4func2st' function" {
+	label="CFG for '_Z4func2st' function";
+
+	Node0x2511310 [shape=record,label="{entry:\l  %retval = alloca %struct.st, align 4\l  %approx_st_1 = alloca %struct.st, align 8\l  %0 = bitcast %struct.st* %approx_st_1 to \<2 x float\>*\l  store \<2 x float\> %approx_st_1.coerce, \<2 x float\>* %0, align 1\l  %a = getelementptr inbounds %struct.st* %approx_st_1, i32 0, i32 0\l  %1 = load float* %a, align 4\l  %a1 = getelementptr inbounds %struct.st* %approx_st_1, i32 0, i32 0\l  %2 = load float* %a1, align 4\l  %mul = fmul float %1, %2\l  %a2 = getelementptr inbounds %struct.st* %retval, i32 0, i32 0\l  store float %mul, float* %a2, align 4\l  %3 = bitcast %struct.st* %retval to \<2 x float\>*\l  %4 = load \<2 x float\>* %3, align 1\l  ret \<2 x float\> %4\l}"];
+}

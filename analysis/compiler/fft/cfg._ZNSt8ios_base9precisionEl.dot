@@ -1,0 +1,5 @@
+digraph "CFG for '_ZNSt8ios_base9precisionEl' function" {
+	label="CFG for '_ZNSt8ios_base9precisionEl' function";
+
+	Node0x19fa9e0 [shape=record,label="{entry:\l  %this.addr = alloca %\"class.std::ios_base\"*, align 8\l  %__prec.addr = alloca i64, align 8\l  %__old = alloca i64, align 8\l  store %\"class.std::ios_base\"* %this, %\"class.std::ios_base\"** %this.addr, align 8\l  store i64 %__prec, i64* %__prec.addr, align 8\l  %this1 = load %\"class.std::ios_base\"** %this.addr\l  %_M_precision = getelementptr inbounds %\"class.std::ios_base\"* %this1, i32 0, i32 1\l  %0 = load i64* %_M_precision, align 8\l  store i64 %0, i64* %__old, align 8\l  %1 = load i64* %__prec.addr, align 8\l  %_M_precision2 = getelementptr inbounds %\"class.std::ios_base\"* %this1, i32 0, i32 1\l  store i64 %1, i64* %_M_precision2, align 8\l  %2 = load i64* %__old, align 8\l  ret i64 %2\l}"];
+}

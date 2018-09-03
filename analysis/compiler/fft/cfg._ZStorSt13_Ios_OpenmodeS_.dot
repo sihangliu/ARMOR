@@ -1,0 +1,5 @@
+digraph "CFG for '_ZStorSt13_Ios_OpenmodeS_' function" {
+	label="CFG for '_ZStorSt13_Ios_OpenmodeS_' function";
+
+	Node0x19fa310 [shape=record,label="{entry:\l  %__a.addr = alloca i32, align 4\l  %__b.addr = alloca i32, align 4\l  store i32 %__a, i32* %__a.addr, align 4\l  store i32 %__b, i32* %__b.addr, align 4\l  %0 = load i32* %__a.addr, align 4\l  %1 = load i32* %__b.addr, align 4\l  %or = or i32 %0, %1\l  ret i32 %or\l}"];
+}

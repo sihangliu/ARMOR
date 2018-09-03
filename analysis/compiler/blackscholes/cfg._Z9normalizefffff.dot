@@ -1,0 +1,5 @@
+digraph "CFG for '_Z9normalizefffff' function" {
+	label="CFG for '_Z9normalizefffff' function";
+
+	Node0x1223e60 [shape=record,label="{entry:\l  %in.addr = alloca float, align 4\l  %min.addr = alloca float, align 4\l  %max.addr = alloca float, align 4\l  %min_new.addr = alloca float, align 4\l  %max_new.addr = alloca float, align 4\l  store float %in, float* %in.addr, align 4\l  store float %min, float* %min.addr, align 4\l  store float %max, float* %max.addr, align 4\l  store float %min_new, float* %min_new.addr, align 4\l  store float %max_new, float* %max_new.addr, align 4\l  %0 = load float* %in.addr, align 4\l  %1 = load float* %min.addr, align 4\l  %sub = fsub float %0, %1\l  %2 = load float* %max.addr, align 4\l  %3 = load float* %min.addr, align 4\l  %sub1 = fsub float %2, %3\l  %div = fdiv float %sub, %sub1\l  %4 = load float* %max_new.addr, align 4\l  %5 = load float* %min_new.addr, align 4\l  %sub2 = fsub float %4, %5\l  %mul = fmul float %div, %sub2\l  %6 = load float* %min_new.addr, align 4\l  %add = fadd float %mul, %6\l  ret float %add\l}"];
+}

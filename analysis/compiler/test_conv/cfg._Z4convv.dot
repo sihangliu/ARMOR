@@ -1,0 +1,23 @@
+digraph "CFG for '_Z4convv' function" {
+	label="CFG for '_Z4convv' function";
+
+	Node0xf959e0 [shape=record,label="{entry:\l  %in = alloca [10 x float], align 16\l  %out = alloca [10 x float], align 16\l  %kernel = alloca [4 x float], align 16\l  %i = alloca i32, align 4\l  %j = alloca i32, align 4\l  store i32 0, i32* %i, align 4\l  br label %for.cond\l}"];
+	Node0xf959e0 -> Node0xf983c0;
+	Node0xf983c0 [shape=record,label="{for.cond:                                         \l  %0 = load i32* %i, align 4\l  %cmp = icmp slt i32 %0, 10\l  br i1 %cmp, label %for.body, label %for.end12\l|{<s0>T|<s1>F}}"];
+	Node0xf983c0:s0 -> Node0xf98420;
+	Node0xf983c0:s1 -> Node0xf97300;
+	Node0xf98420 [shape=record,label="{for.body:                                         \l  %1 = load i32* %i, align 4\l  %idxprom = sext i32 %1 to i64\l  %arrayidx = getelementptr inbounds [10 x float]* %out, i32 0, i64 %idxprom\l  store float 0.000000e+00, float* %arrayidx, align 4\l  store i32 0, i32* %j, align 4\l  br label %for.cond1\l}"];
+	Node0xf98420 -> Node0xf98480;
+	Node0xf98480 [shape=record,label="{for.cond1:                                        \l  %2 = load i32* %j, align 4\l  %cmp2 = icmp slt i32 %2, 10\l  br i1 %cmp2, label %for.body3, label %for.end\l|{<s0>T|<s1>F}}"];
+	Node0xf98480:s0 -> Node0xf984e0;
+	Node0xf98480:s1 -> Node0xf97240;
+	Node0xf984e0 [shape=record,label="{for.body3:                                        \l  %3 = load i32* %i, align 4\l  %4 = load i32* %j, align 4\l  %sub = sub nsw i32 %3, %4\l  %idxprom4 = sext i32 %sub to i64\l  %arrayidx5 = getelementptr inbounds [10 x float]* %in, i32 0, i64 %idxprom4\l  %5 = load float* %arrayidx5, align 4\l  %6 = load i32* %j, align 4\l  %idxprom6 = sext i32 %6 to i64\l  %arrayidx7 = getelementptr inbounds [4 x float]* %kernel, i32 0, i64 %idxprom6\l  %7 = load float* %arrayidx7, align 4\l  %mul = fmul float %5, %7\l  %8 = load i32* %i, align 4\l  %idxprom8 = sext i32 %8 to i64\l  %arrayidx9 = getelementptr inbounds [10 x float]* %out, i32 0, i64 %idxprom8\l  %9 = load float* %arrayidx9, align 4\l  %add = fadd float %9, %mul\l  store float %add, float* %arrayidx9, align 4\l  br label %for.inc\l}"];
+	Node0xf984e0 -> Node0xf971e0;
+	Node0xf971e0 [shape=record,label="{for.inc:                                          \l  %10 = load i32* %j, align 4\l  %inc = add nsw i32 %10, 1\l  store i32 %inc, i32* %j, align 4\l  br label %for.cond1\l}"];
+	Node0xf971e0 -> Node0xf98480;
+	Node0xf97240 [shape=record,label="{for.end:                                          \l  br label %for.inc10\l}"];
+	Node0xf97240 -> Node0xf972a0;
+	Node0xf972a0 [shape=record,label="{for.inc10:                                        \l  %11 = load i32* %i, align 4\l  %inc11 = add nsw i32 %11, 1\l  store i32 %inc11, i32* %i, align 4\l  br label %for.cond\l}"];
+	Node0xf972a0 -> Node0xf983c0;
+	Node0xf97300 [shape=record,label="{for.end12:                                        \l  ret void\l}"];
+}
